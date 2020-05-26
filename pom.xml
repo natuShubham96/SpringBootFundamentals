@@ -8,6 +8,15 @@
 		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repository.spring.release</id>
+			<name>Spring GA Repository</name>
+			<url>https://repo.spring.io/plugins-release/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<groupId>com.shubham.springBoot</groupId>
 	<artifactId>spring-boot-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -23,6 +32,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
 		</dependency>
 
 		<dependency>
